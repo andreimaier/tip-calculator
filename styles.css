@@ -83,7 +83,7 @@ main {
   position: absolute;
   top: 2.76rem;
   left: 1.26rem;
-  content: url(/images/icon-dollar.svg);
+  content: url(./images/icon-dollar.svg);
   display: inline-block;
 }
 .tip {
@@ -155,7 +155,7 @@ main {
   outline: 2px solid #d49484;
 }
 .people label:before {
-  content: url(/images/icon-person.svg);
+  content: url(./images/icon-person.svg);
   position: absolute;
   top: 2.75rem;
   left: 1.05rem;
