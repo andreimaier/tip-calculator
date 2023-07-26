@@ -114,6 +114,20 @@ main {
   display: block;
   font-size: 1.47rem;
 }
+.grid label:hover {
+  color: var(--VeryDarkCyan);
+  background-color: var(--LightGrayishCyan);
+  border-radius: 5px;
+}
+.grid input {
+  cursor: pointer;
+}
+.bill input:focus,
+.grid input[type="text"]:focus,
+.people input:focus {
+  outline: 2px solid var(--StrongCyan);
+  border-radius: 5px;
+}
 .tip input:checked + label {
   color: var(--VeryDarkCyan);
   background-color: var(--StrongCyan);
@@ -127,6 +141,7 @@ main {
 }
 .people {
   gap: 0.4rem;
+  flex-direction: column-reverse;
 }
 .people input {
   width: 100%;
@@ -135,6 +150,9 @@ main {
 }
 .people label {
   position: relative;
+}
+.people input:invalid {
+  outline: 2px solid #d49484;
 }
 .people label:before {
   content: url(/images/icon-person.svg);
@@ -188,7 +206,7 @@ main {
   transform: translateY(9px);
 }
 
-@media screen and (width>400px) {
+@media screen and (width>50rem) {
   body {
     background-color: var(--LightGrayishCyan);
   }
@@ -239,14 +257,12 @@ main {
     padding-bottom: 3rem;
   }
   .tip input[type="text"] {
-    /* padding: 0; */
     padding-right: 0.9rem;
     justify-self: center;
     max-width: 7rem;
   }
   .result p:nth-of-type(2),
   .result p:nth-of-type(4) {
-    color: red;
     font-size: 3rem;
   }
   .result p:nth-of-type(2) {
