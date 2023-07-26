@@ -74,7 +74,7 @@ main {
 
 .bill input::placeholder,
 .people input::placeholder {
-  color: var(--VeryDarkCyan);
+  color: var(--GrayishCyan);
 }
 .bill label {
   position: relative;
@@ -197,7 +197,7 @@ main {
 
 .result button {
   grid-column: 1/3;
-  background-color: var(--StrongCyan);
+  background-color: #0d686d;
   color: var(--VeryDarkCyan);
   font-size: 1.2rem;
   border-radius: 5px;
